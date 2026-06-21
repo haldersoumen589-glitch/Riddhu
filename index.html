@@ -1,146 +1,178 @@
 <!-- =========================
-PAGE 1 : index.html
+PAGE 2 : surprise.html
 ========================= -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Riddhu ❤️</title>
+<title>Surprise Riddhu ❤️</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fad0c4,#fbc2eb);
-    overflow:hidden;
+
+min-height:100vh;
+
+background:linear-gradient(135deg,#1f1c2c,#928dab);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
 }
 
-.container{
-    text-align:center;
-    animation:fadeIn 2s ease;
+.card{
+
+max-width:450px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+padding:25px;
+
+text-align:center;
+
+box-shadow:0 0 30px rgba(255,255,255,.3);
+
+animation:appear 1.5s ease;
+
+}
+
+img{
+
+width:100%;
+
+border-radius:20px;
+
+box-shadow:0 0 20px rgba(255,255,255,.3);
+
 }
 
 h1{
-    font-size:55px;
-    color:white;
-    text-shadow:0 0 20px rgba(255,255,255,.7);
+
+margin-top:20px;
+
+color:#fff;
+
+font-size:36px;
+
 }
 
-p{
-    color:white;
-    margin-top:20px;
-    font-size:20px;
+.message{
+
+margin-top:20px;
+
+font-size:20px;
+
+color:white;
+
+line-height:1.8;
+
 }
 
-.btn{
-    margin-top:40px;
-    padding:18px 45px;
-    font-size:24px;
-    border:none;
-    border-radius:50px;
-    cursor:pointer;
-    color:#ff4b7d;
-    background:white;
-    box-shadow:0 0 30px rgba(255,255,255,.6);
-    transition:0.4s;
-    position:relative;
-    overflow:hidden;
+.highlight{
+
+color:#ffd700;
+
+font-weight:bold;
+
+font-size:28px;
+
 }
 
-.btn:hover{
-    transform:scale(1.1);
-    box-shadow:0 0 50px white;
+.quote{
+
+margin-top:25px;
+
+font-style:italic;
+
+font-size:22px;
+
+color:#ffe6e6;
+
 }
 
-.btn::before{
-    content:'✨';
-    position:absolute;
-    left:-40px;
-    transition:.5s;
+@keyframes appear{
+
+from{
+
+opacity:0;
+
+transform:scale(.8);
+
 }
 
-.btn:hover::before{
-    left:20px;
+to{
+
+opacity:1;
+
+transform:scale(1);
+
 }
 
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(50px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
 }
 
-/* floating hearts */
-span{
-    position:absolute;
-    color:white;
-    animation:float 8s linear infinite;
-}
-
-@keyframes float{
-    from{
-        transform:translateY(100vh);
-        opacity:1;
-    }
-    to{
-        transform:translateY(-10vh);
-        opacity:0;
-    }
-}
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<h1>Happy Birthday Riddhu ✈️❤️</h1>
+<!-- Put your image name here -->
+<img src="1000124591.jpg" alt="Riddhisha">
 
-<p>
-An Aviation Trainee,<br>
-A Dreamer,<br>
-And someone who shines brighter than she knows.
-</p>
+<h1>Happy Birthday Riddhu ✈️🎂</h1>
 
-<button class="btn" onclick="window.location.href='surprise.html'">
-🎁 Open Surprise
-</button>
+<div class="message">
+
+You are an Aviation Trainee,<br>
+
+A dreamer who dares to touch the sky.<br><br>
+
+Life may change,<br>
+
+People may become distant,<br>
+
+But one thing never changes...
 
 </div>
 
-<script>
+<div class="highlight">
 
-for(let i=0;i<25;i++){
+✨ The Real Surprise Is Always YOU ✨
 
-let heart=document.createElement("span");
+</div>
 
-heart.innerHTML="❤";
+<div class="quote">
 
-heart.style.left=Math.random()*100+"vw";
+"Keep flying higher Riddhu,<br>
 
-heart.style.fontSize=Math.random()*25+15+"px";
+because the sky is not your limit,<br>
 
-heart.style.animationDuration=Math.random()*4+4+"s";
+it's just your beginning."
 
-document.body.appendChild(heart);
+❤️
 
-}
+</div>
 
-</script>
+</div>
 
 </body>
 </html>
